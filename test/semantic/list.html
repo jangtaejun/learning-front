@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic 101 Template</title>
+	<!-- Standard Meta -->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Semantic-->
+	<link rel="stylesheet" type="text/css" class="ui" href="/semantic/packaged/css/semantic.min.css">
+</head>
+<body>
+<div class="ui inverted menu">
+	<span class="header item">최저가 검색</span>
+
+	<div class="item">
+		<div class="ui icon input">
+			<input type="text" name="findKeyword" placeholder="제품명 또는 모델명">
+			<i class="search link icon"></i>
+		</div>
+	</div>
+
+	<div class="item">
+		<div class="ui input">
+			<input type="text" name="targetPrice" placeholder="가격">
+		</div>
+	</div>
+	<div class="item">
+		<div class="ui checkbox">
+			<input type="checkbox" name="filterItemsOverTargetPrice">
+			<label>이하만 표시</label>
+		</div>
+	</div>
+	<div class="right menu">
+		<a class="item">
+			<i class="close icon"></i>
+		</a>
+	</div>
+</div>
+
+<div class="ui two column grid">
+	<div class="column">
+		<div class="ui medium header">T사</div>
+		<div class="ui divided list">
+			<div class="item">
+				<img class="rounded ui image"
+					 src="http://shopping.phinf.naver.net/main_6873941/6873941904.20130620102834.jpg?type=f200">
+
+				<div class="content">
+					<div class="header">W1,232,123</div>
+					<ul class="ui list">
+						<li>An excellent companion</li>
+						<li>An excellent companion</li>
+					</ul>
+				</div>
+			</div>
+			<div class="item">
+				<img class="rounded ui image"
+					 src="http://shopping.phinf.naver.net/main_6873941/6873941904.20130620102834.jpg?type=f200">
+
+				<div class="content">
+					<div class="header">W1,232,123</div>
+					<ul class="ui list">
+						<li>An excellent companion</li>
+						<li>An excellent companion</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui vertical divider">
+		Or
+	</div>
+	<div class="column">
+		<div class="ui medium header">W사</div>
+		<table class="ui five column celled table segment">
+			<thead>
+			<tr>
+				<th class="two wide"></th>
+				<th class="two wide">가격</th>
+				<th class="six wide">모델<br/>브랜드</th>
+				<th class="six wide">딜명<br/>옵션명</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><img class="rounded ui image"
+						 src="http://shopping.phinf.naver.net/main_6873941/6873941904.20130620102834.jpg?type=f200">
+				</td>
+				<th>1,232,123</th>
+				<td>R-23432BWBW<br/>LG휘센</td>
+				<td>손연제 에어컨<br/>R2343224 16평형</td>
+			</tr>
+			<tr class="negative">
+				<td><img class="rounded ui image"
+						 src="http://photo3.enuri.com/data/images/service/small/7507000/7507231.gif"></td>
+				<th><i class="attention icon"></i>1,232,123</th>
+				<td>R-23432BWBW<br/>LG휘센</td>
+				<td>손연제 에어컨<br/>R2343224 16평형</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/semantic/packaged/javascript/semantic.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("input:checkbox").checkbox("toggle");
+	});
+</script>
+</body>
+</html>
+
+
